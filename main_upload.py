@@ -186,7 +186,7 @@ def train(train_loader, model, model_lgd, criterion, optimizer, epoch, args):
         # output
         output, output_label = model(images, eyes, mouth, nose, lcheek, rcheek)
         # compute loss
-        # obtain 
+        # obtain feature representation from the corresponding binary classifier of Binary_FRG
         with torch.no_grad():
             soft_list, soft_label_list = model_lgd(images)
             soft_label = torch.clone(output_label)
