@@ -16,7 +16,6 @@ from models import resnet_binary as model_ldl
 from models import model_cluster_upload as GLA
 from helper import adjust_learning_rate, accuracy, save_checkpoint, AverageMeter, ProgressMeter, RecorderMeter
 
-# 参数
 now = datetime.datetime.now()
 time_str = now.strftime("[%m-%d]-[%H-%M]-")
 
